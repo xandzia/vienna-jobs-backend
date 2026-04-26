@@ -1,2 +1,2 @@
 # vienna-jobs-backend
-AI-powered job search backend with Claude API and RAG pipeline
+AI-powered job search with Claude API and RAG pipeline
