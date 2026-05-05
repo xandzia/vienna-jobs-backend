@@ -6,5 +6,7 @@ User schreme
 
 User clicks "Find new jobs":
 Last scrape < 6h ago?
--> YES → Use existing jobs from DB (only for matching (for user), scraping skip)
--> NO  → Scrape + embed new jobs, then match
+
+YES → Use existing jobs from DB (only for matching (for user), scraping skip)
+
+NO  → Scrape + embed new jobs, then match
