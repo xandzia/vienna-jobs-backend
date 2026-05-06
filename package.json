@@ -1,0 +1,32 @@
+{
+  "name": "vienna-jobs-backend",
+  "version": "0.1.0",
+  "description": "AI-powered job search backend with Claude API and RAG pipeline",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "claude",
+    "ai",
+    "rag",
+    "typescript",
+    "fastify",
+    "job-search"
+  ],
+  "author": "Anna Stepashko",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.4",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.0",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
