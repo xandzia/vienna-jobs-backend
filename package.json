@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "db:studio": "prisma studio",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate"
   },
   "keywords": [
     "claude",
@@ -21,12 +24,23 @@
   "packageManager": "pnpm@10.33.4",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.0",
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "dotenv": "^17.4.2",
     "fastify": "^5.8.5"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
+    "dotenv-cli": "^11.0.0",
+    "prisma": "^7.8.0",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "prisma",
+      "@prisma/engines",
+      "esbuild"
+    ]
   }
 }
