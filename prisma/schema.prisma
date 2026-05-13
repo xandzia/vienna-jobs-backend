@@ -26,19 +26,22 @@ model User {
 
 model Job {
   id          String   @id @default(cuid())
-  externalId  String   @unique // ID from karriere.at
-  
+  externalId  String   @unique
+
   title       String
   company     String
   location    String
   description String   @db.Text
   url         String
-  
+
   salaryMin   Int?
   salaryMax   Int?
-  
+
   postedAt    DateTime?
   scrapedAt   DateTime @default(now())
+
+  // Vector embedding from Voyage AI (1024 dimensions for voyage-3)
+  embedding   Unsupported("vector(1024)")?
   
   applications Application[]
   

@@ -1,0 +1,23 @@
+### Simple semantic search
+POST http://localhost:3000/api/search
+Content-Type: application/json
+
+{
+  "query": "senior vue developer with TypeScript experience"
+}
+
+### More specific query - tests Claude understanding
+POST http://localhost:3000/api/search
+Content-Type: application/json
+
+{
+  "query": "frontend role with focus on performance optimization, not interested in fullstack"
+}
+
+### Vue specific query
+POST http://localhost:3000/api/search
+Content-Type: application/json
+
+{
+  "query": "junior frontend role good for first job"
+}

@@ -10,7 +10,8 @@
     "db:studio": "prisma studio",
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
-    "ingest": "tsx src/scripts/ingest.ts"
+    "ingest": "tsx src/scripts/ingest.ts",
+    "embed": "tsx src/scripts/embed.ts"
   },
   "keywords": [
     "claude",
