@@ -11,7 +11,11 @@ datasource db {
 
 model User {
   id          String   @id @default(cuid())
-  email       String   @unique
+
+  // Identity: either email (web auth) or telegram chat ID
+  email       String?  @unique
+  telegramChatId String? @unique @map("telegram_chat_id")
+
   name        String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
